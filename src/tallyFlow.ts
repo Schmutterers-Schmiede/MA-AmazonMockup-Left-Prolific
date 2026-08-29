@@ -51,7 +51,7 @@ export function nextUrl(ctx: ReturnType<typeof getContext>) {
 
   if (nextStep >= totalSteps) {
     // TODO: swap in the duplicated closing-survey form URL for the Prolific copy.
-    return `https://tally.so/r/Gxa6XL?pid=${ctx.pid}&grip=${ctx.grip}${prolificSuffix}`;
+    return `https://tally.so/r/RGyEKQ?pid=${ctx.pid}&grip=${ctx.grip}${prolificSuffix}`;
   }
 
   const nextPairIndex = Math.floor(nextStep / VARIANTS.length);

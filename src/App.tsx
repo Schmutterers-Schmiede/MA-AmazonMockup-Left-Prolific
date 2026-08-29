@@ -57,7 +57,7 @@ export default function App() {
     // so we still capture something rather than sending null.
     const elapsed = timeToAllVisitedRef.current ?? (Date.now() - startTimeRef.current)
 
-    window.Tally.openPopup('gD17jO', { // TODO: swap for the duplicated Prolific-version form ID
+    window.Tally.openPopup('jaA1D1', { // TODO: swap for the duplicated Prolific-version form ID
       layout: 'modal',
       hiddenFields: {
       pid: ctx.pid,
