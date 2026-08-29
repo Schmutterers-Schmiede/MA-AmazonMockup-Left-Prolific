@@ -57,7 +57,7 @@ export default function App() {
     // so we still capture something rather than sending null.
     const elapsed = timeToAllVisitedRef.current ?? (Date.now() - startTimeRef.current)
 
-    window.Tally.openPopup('gD17jO', {
+    window.Tally.openPopup('gD17jO', { // TODO: swap for the duplicated Prolific-version form ID
       layout: 'modal',
       hiddenFields: {
       pid: ctx.pid,
@@ -67,6 +67,8 @@ export default function App() {
       elapsed_ms: elapsed,
       grip_type: ctx.grip,
       preference_step: ctx.preferenceStep, // 'skip' | 'two_way' | 'three_way'
+      study_id: ctx.studyId,
+      session_id: ctx.sessionId,
     },
       onSubmit: () => {
         window.location.href = nextUrl(ctx)
