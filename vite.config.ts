@@ -9,7 +9,7 @@ const isFigmaSandbox = process.env.FIGMA === '1' || process.env.FIGMA === 'true'
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig({
-  base: '/MA-AmazonMockup-Left/',
+  base: '/MA-AmazonMockup-Left-Prolific/',
   plugins: [
     react(),
     tailwindcss(),
